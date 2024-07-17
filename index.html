@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>my clicker game</title>
+    <script>
+      document.createElement("aside");
+      document.createElement("article");
+    </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <script src="main.js" charset="utf-8" type="text/javascript"></script>
+      <button class="btn btn-primary" onclick="mineGold()">Earn</button>
+      <button onclick="gpscheck()">gpscheck</button>
+      <h1 id="libFarmed">0 lib Farmed</h1>
+      <button
+        class="btn btn-primary"
+        onclick="buygoldperclick()"
+        +="gpscheck()"
+        id="perclickupgrade"
+      >
+        Upgrade Earning(level 1) Cost:10 lib
+      </button>
+      <p id="goldpertick">You don't have passive income</p>
+      <p id="interval">Passive farming tick: 1000 ms</p>
+      <div>
+        <button
+          class="btn btn-primary"
+          onclick="passive1lvl()"
+          id="passiveupgrade"
+        >
+          buy +1 lib passive farm Cost:10
+        </button>
+        <p></p>
+        <button
+          class="btn btn-primary"
+          onclick="buyfarmlevel1()"
+          id="buyfarmlevel1"
+        >
+          farm tier2 cost:300
+        </button>
+        <p></p>
+        <button
+          class="btn btn-primary"
+          onclick="buyfarmlevel2()"
+          id="buyfarmlevel2"
+        >
+          farm tier3
+        </button>
+        <p></p>
+        <button
+          class="btn btn-primary"
+          onclick="buyfarmlevel3()"
+          id="buyfarmlevel3"
+        >
+          farm tier4
+        </button>
+        <p></p>
+        <button
+          class="btn btn-primary"
+          onclick="buyfarmlevel4()"
+          id="buyfarmlevel4"
+        >
+          farm tier5
+        </button>
+        <p></p>
+        <button
+          class="btn btn-primary"
+          onclick="buyfarmlevel5()"
+          id="buyfarmlevel5"
+        >
+          farm tier6
+        </button>
+        <p></p>
+        <button
+          class="btn btn-primary"
+          onclick="buyfarmlevel6()"
+          id="buyfarmlevel6"
+        >
+          farm tier7
+        </button>
+        <p></p>
+        <button
+          class="btn btn-primary"
+          onclick="buyfarmlevel7()"
+          id="buyfarmlevel7"
+        >
+          farm tier8
+        </button>
+        <p></p>
+        <button
+          class="btn btn-primary"
+          onclick="buyfarmlevel8()"
+          id="buyfarmlevel8"
+        >
+          farm tier9
+        </button>
+        <p></p>
+        <button
+          class="btn btn-primary"
+          onclick="buyfarmlevel9()"
+          id="buyfarmlevel9"
+        >
+          farm tier10
+        </button>
+      </div>
+      <p></p>
+      <button
+        class="btn btn-primary"
+        onclick="reduceinterval()"
+        id="reduceinterval"
+      >
+        reduce farming interval Cost:1000
+      </button>
+    </div>
+    <p>
+      <button class="btn btn-primary" id="gowno" onclick="consolelog()">
+        gowno
+      </button>
+    </p>
+    <p>
+      <button onclick="savegame()">save</button>
+      <button onclick="loadgame()">load</button>
+    </p>
+  </body>
+</html>
